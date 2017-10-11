@@ -1,0 +1,36 @@
+.Downloads {
+    &__item {
+        background: $black center center no-repeat;
+        border-radius: 50%;
+        display: block;
+        text-indent: -9999px;
+        width: 55px;
+        height: 55px;
+        margin: 0 15px 0 0;
+        opacity: .8;
+        transition: all $transition-duration-default;
+
+        &:hover {
+            opacity: 1;
+            background-color: $theme-primary;
+        }
+
+        &:active {
+            background-color: darken($theme-primary, 10%);
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.apple {
+            background-image: url(../img/apple.png);
+        }
+        &.android {
+            background-image: url(../img/android.png);
+        }
+        &.windows {
+            background-image: url(../img/windows.png);
+        }
+    }
+}

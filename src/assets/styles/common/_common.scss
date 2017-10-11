@@ -1,0 +1,49 @@
+
+body {
+    font-family: Helvetica Neue, Helvetica;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+
+    &:before {
+        background: $theme-primary;
+        content: " ";
+        display: block;
+        height: $header-topline-height;
+        position: relative;
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #848484;
+    margin-bottom: 25px;
+
+    &.quote {
+        font-style: italic;
+        line-height: 30px;
+    }
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+.container {
+    max-width: 1180px;
+    display: block;
+    margin: 0 auto;
+    padding: 55px 10px;
+
+    @media only screen and (max-width: $bp-desktop) {
+        width: 100%;
+
+        padding: 50px 20px;
+    }
+}
