@@ -40,7 +40,7 @@
 
 
         &__input-wrap {
-            border-radius: 20px;
+            border-radius: 15px;
             border: 1px solid #c8c8c8;
             overflow: hidden;
             display: flex;

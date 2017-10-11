@@ -1,9 +1,13 @@
 <script>
-    export default {};
+    export default {
+        mounted() {
+            console.log('Zeit wurde knapp, sorry :)');
+        }
+    };
 </script>
 
 <template>
-    <div class="Footer container">
+    <footer class="Footer container">
         <ul class="Footer__items">
             <li class="Footer__item"><a href="#">Contact</a></li>
             <li class="Footer__item"><a href="#">Download</a></li>
@@ -12,7 +16,7 @@
             <li class="Footer__item"><a href="#">Support</a></li>
             <li class="Footer__item"><a href="#">Privacy</a></li>
         </ul>
-    </div>
+    </footer>
 </template>
 
 <style scoped lang="scss">
@@ -23,6 +27,10 @@
             a {
                 color: #848484;
                 text-decoration: none;
+
+                &:hover {
+                    color: darken(#848484, 10%);
+                }
             }
         }
 

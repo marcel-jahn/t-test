@@ -38,7 +38,7 @@
         &__video {
             width: 500px;
             height: 300px;
-            border-radius: 20px;
+            border-radius: 15px;
             overflow: hidden;
 
             iframe {
